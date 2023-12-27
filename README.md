@@ -5,10 +5,15 @@ It's my config for NvChad with orientation to C++ and python.
 
 ## How to use it?
 Install neovim  ( google it if you don't know how )
+
 Install NvChad  ( google it if you don't know how )
+
 Then go to neovim config folder. `cd ~/.config/nvim/` on Linux
+
 Then go to `lua/custom`.
+
 Then clone this repo there. `git clone https://github.com/Gerodote/Nvchad_config_cpp.git`
+
 
 ## Is it good?
 It's have clangd through Mason, cmake plugin, some keybindings. 
