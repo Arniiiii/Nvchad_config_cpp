@@ -10,9 +10,9 @@ Install NvChad  ( google it if you don't know how )
 
 Then go to neovim config folder. `cd ~/.config/nvim/` on Linux
 
-Then go to `lua/custom`.
+Then go to `lua` folder in the config folder.
 
-Then clone this repo there. `git clone https://github.com/Gerodote/Nvchad_config_cpp.git`
+Then clone this repo to `custom` folder. `git clone https://github.com/Gerodote/Nvchad_config_cpp.git --branch master custom`
 
 
 ## Is it good?
@@ -21,7 +21,7 @@ In general, it's great to use, though no debugger.
 
 ## TODO
 1. Debugger stuff. Console GDB/LLDB is cool, but some want it inside editor...
-2. More keybindigs for some plugins
+2. More keybindigs for some plugins ( gitsigns? )
 3. Findout if there's a way to turn on less plugin not lazily. Investigation
 4. Find a plugin for cool command palette
 5. Find how to put more snippets
