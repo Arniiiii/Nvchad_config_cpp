@@ -90,7 +90,7 @@ local plugins = {
   {
     "gelguy/wilder.nvim",
     dependencies = {
-      { "romgrk/fzy-lua-native", build = "make", lazy = false },
+      { "Gerodote/fzy-lua-native_updated_gitignore_repaired_makefile", build = "make", lazy = false },
       { "nixprime/cpsm", dependencies = { "ctrlpvim/ctrlp.vim", lazy = false }, lazy = false, build = "bash ./install.sh" },
     },
     config = function()
