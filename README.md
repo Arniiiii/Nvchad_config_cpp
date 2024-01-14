@@ -10,9 +10,9 @@ Install NvChad  ( google it if you don't know how )
 
 Then go to neovim config folder. `cd ~/.config/nvim/` on Linux
 
-Then go to `lua/custom`.
+Then go to `lua` folder in the config folder.
 
-Then clone this repo there. `git clone https://github.com/Gerodote/Nvchad_config_cpp.git`
+Then clone this repo to `custom` folder. `git clone https://github.com/Gerodote/Nvchad_config_cpp.git --branch master custom`
 
 
 ## Is it good?
