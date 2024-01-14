@@ -20,9 +20,16 @@ It's have clangd through Mason, cmake plugin, some keybindings.
 In general, it's great to use, though no debugger.
 
 ## TODO
-1. Debugger stuff. Console GDB/LLDB is cool, but some want it inside editor...
-2. More keybindigs for some plugins ( gitsigns? )
-3. Findout if there's a way to turn on less plugin not lazily. Investigation
-4. Find a plugin for cool command palette
-5. Find how to put more snippets
-6. Allow more diversity of folder structures for include-guard plugin. Now only works if there's `src` in a path to a file. Maybe rewrite plugin to lua and use neovim's API?
+1. [ ] Debugger stuff. Console GDB/LLDB is cool, but some want it inside editor...
+2. More keybindigs for some plugins
+	- [ ] telescope related
+	- [ ] gitsigns related 
+3. Find out if there's a way to turn on less plugin not lazily. Investigation
+4. [ ] Find a plugin for cool command palette]
+	- [hachy/cmdpalette.nvim](https://github.com/hachy/cmdpalette.nvim) doesn't support ranges and feels not so good  
+	- [gelguy/wilder.nvim](https://github.com/gelguy/wilder.nvim) seems to be unmaintained and I failed to installed it correctly [my attempt](https://github.com/gelguy/wilder.nvim/issues/196)  
+	- [VonHeikemen/fine-cmdline.nvim](https://github.com/VonHeikemen/fine-cmdline.nvim) doesn't support ranges
+	- [mrjones2014/legendary.nvim](https://github.com/mrjones2014/legendary.nvim) seems to not have ability to somehow get commands from everywhere like `:Telescope commands` , though looks cool. Maybe try again later. 
+5. Find out how to put more snippets and put them from somewhere. Investigation.
+6. [ ] Find good alternative to `:s`. 
+7. [ ] Allow more diversity of folder structures for include-guard plugin. Now only works if there's `src` in a path to a file. Maybe rewrite plugin to lua and use neovim's API?
