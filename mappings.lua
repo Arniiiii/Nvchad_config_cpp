@@ -2,11 +2,15 @@
 local M = {}
 
 M.general = {
-  n = {
-    [";"] = { ":", "enter command mode", opts = { nowait = true } },
-  },
   v = {
     [">"] = { ">gv", "indent" },
+  },
+}
+
+M.telescope = {
+  n = {
+    ["<leader>;"] = { ":Telescope commands<CR>", "Telescope commands" },
+    ["<leader>tch"] = { ":Telescope command_history<CR>", "Telescope command history" },
   },
 }
 
