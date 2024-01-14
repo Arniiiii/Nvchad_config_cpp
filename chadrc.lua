@@ -17,4 +17,6 @@ M.plugins = "custom.plugins"
 -- check core.mappings for table structure
 M.mappings = require "custom.mappings"
 
+M.lazy_nvim = require "custom.lazy_nvim"
+
 return M

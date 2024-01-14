@@ -91,19 +91,21 @@ local plugins = {
     "gelguy/wilder.nvim",
     dependencies = {
       { "romgrk/fzy-lua-native", build = "make", lazy = false },
-      { "nixprime/cpsm", dependencies = { "ctrlpvim/ctrlp.vim", lazy = false }, lazy = false },
+      { "nixprime/cpsm", dependencies = { "ctrlpvim/ctrlp.vim", lazy = false }, lazy = false, build = "bash ./install.sh" },
     },
     config = function()
       require "custom.configs.wilder"
     end,
     keys = { "/", "?", ":" },
-    build = ":UpdateRemotePlugins",
+    build = function()
+      vim.cmd([[
+        let &rtp=&rtp
+      ]]
+      )
+      vim.api.nvim_command "runtime! plugin/rplugin.vim"
+      vim.api.nvim_command ":UpdateRemotePlugins"
+    end,
     opts = { num_workers = 1 },
-    -- init = function ()
-    --   vim.cmd([[
-    --   :UpdateRemoteConfig
-    --   ]])
-    -- end,
   },
 
   -- To make a plugin not be loaded
