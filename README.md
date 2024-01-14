@@ -27,9 +27,9 @@ In general, it's great to use, though no debugger.
 3. Find out if there's a way to turn on less plugin not lazily. Investigation
 4. [ ] Find a plugin for cool command palette]
 	- [hachy/cmdpalette.nvim](https://github.com/hachy/cmdpalette.nvim) doesn't support ranges and feels not so good  
-	- [gelguy/wilder.nvim](https://github.com/gelguy/wilder.nvim) seems to be unmaintained and I failed to installed it correctly [my attempt](https://github.com/gelguy/wilder.nvim/issues/196)  
+	- [gelguy/wilder.nvim](https://github.com/gelguy/wilder.nvim) seems to be unmaintained and I failed to installed it correctly [my attempt](https://github.com/gelguy/wilder.nvim/issues/196) . Maybe try again later.
 	- [VonHeikemen/fine-cmdline.nvim](https://github.com/VonHeikemen/fine-cmdline.nvim) doesn't support ranges
-	- [mrjones2014/legendary.nvim](https://github.com/mrjones2014/legendary.nvim) seems to not have ability to somehow get commands from everywhere like `:Telescope commands` , though looks cool. Maybe try again later. 
+	- [mrjones2014/legendary.nvim](https://github.com/mrjones2014/legendary.nvim) seems to not have ability to somehow get commands from everywhere like `:Telescope commands` , though looks cool. Doesn't support ranges. 
 5. Find out how to put more snippets and put them from somewhere. Investigation.
 6. [ ] Find good alternative to `:s`. 
 7. [ ] Allow more diversity of folder structures for include-guard plugin. Now only works if there's `src` in a path to a file. Maybe rewrite plugin to lua and use neovim's API?
