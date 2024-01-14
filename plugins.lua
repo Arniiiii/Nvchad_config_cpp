@@ -105,7 +105,6 @@ local plugins = {
       vim.api.nvim_command "runtime! plugin/rplugin.vim"
       vim.api.nvim_command ":UpdateRemotePlugins"
     end,
-    opts = { num_workers = 1 },
   },
 
   -- To make a plugin not be loaded
