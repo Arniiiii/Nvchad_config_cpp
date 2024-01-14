@@ -74,7 +74,7 @@ local plugins = {
   },
   {
     "drmikehenry/vim-headerguard",
-    lazy = false,
+    ft = { "hpp", "h", "hh", "hxx" },
     config = function()
       require "custom.configs.vim-headerguard"
     end,
@@ -96,12 +96,14 @@ local plugins = {
     config = function()
       require "custom.configs.wilder"
     end,
+    keys = { "/", "?", ":" },
+    build = ":UpdateRemotePlugins",
+    opts = { num_workers = 1 },
     -- init = function ()
     --   vim.cmd([[
     --   :UpdateRemoteConfig
     --   ]])
     -- end,
-    lazy = false,
   },
 
   -- To make a plugin not be loaded
