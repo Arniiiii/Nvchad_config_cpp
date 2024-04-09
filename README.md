@@ -17,7 +17,8 @@ In general, it's great to use.
 ## TODO
 - [ ] migrate to nvchad v2.5
     - [x] apply migrate.sh 
-    - [ ] transform mappings syntax to vim mappings
+    - [x] transform mappings syntax to vim mappings
+    - [ ] cheatsheet doesn't have categories with one word
 - [x] Debugger stuff. Console GDB/LLDB is cool, but some want it inside editor...
     - [x] CMake debugger in neovim !!! CMake Generate (`<leader>G`), toggle a breakpoint (`<leader>b`), press Continue(`<F5>`), it works! Prerequisite: cmake is 3.27+ and is compiled with dap feature. (for gentoo users `flaggie dev-build/cmake +dap`).
         - [x] build folder is taken from cmake plugin
