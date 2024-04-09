@@ -6,14 +6,9 @@ It's my config for NvChad with orientation to C++ and python.
 ## How to use it?
 Install neovim  ( google it if you don't know how )
 
-Install NvChad  ( google it if you don't know how )
-
-Then go to neovim config folder. `cd ~/.config/nvim/` on Linux
-
-Then go to `lua` folder in the config folder.
-
-Then clone this repo to `custom` folder. `git clone https://github.com/Gerodote/Nvchad_config_cpp.git --branch master custom`
-
+If you are on linux:
+Then in a console: `git clone https://github.com/Gerodote/Nvchad_config_cpp.git --branch master ~/.config/nvim`
+If another system, check where neovim's config and change the last part of the command.
 
 ## Is it good?
 It's have clangd through Mason, cmake plugin, cmake debugger, c++ debugger, python debugger, some keybindings. 
