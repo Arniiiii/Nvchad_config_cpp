@@ -1,15 +1,12 @@
 require "nvchad.mappings"
----@type MappingsTable
 
 vim.keymap.set("v", ">", ">gv", { desc = "general indent" })
-
 
 vim.keymap.set("n", "<C-h>", ":TmuxNavigateLeft<CR><ESC>", { desc = "tmux_navigator Window left" })
 vim.keymap.set("n", "<C-l>", ":TmuxNavigateRight<CR><ESC>", { desc = "tmux_navigator Window right" })
 vim.keymap.set("n", "<C-j>", ":TmuxNavigateDown<CR><ESC>", { desc = "tmux_navigator Window down" })
 vim.keymap.set("n", "<C-k>", ":TmuxNavigateUp<CR><ESC>", { desc = "tmux_navigator Window left" })
 vim.keymap.set("n", "<C-b>", ":TmuxNavigatePrevious<CR><ESC>", { desc = "tmux_navigator Window previous" })
-
 
 vim.keymap.set("n", "<leader>dr", function()
   require("dap").restart()
@@ -60,7 +57,6 @@ end, { desc = "dap Repl open?" })
 vim.keymap.set("n", "<leader>dl", function()
   require("dap").run_last()
 end, { desc = "dap Run last?" })
-
 
 vim.keymap.set("n", "<leader>do", function()
   require("dapui").open()
@@ -119,25 +115,25 @@ vim.keymap.set("n", "<leader>sw", ":CMakeSelectCwd <CR>", { desc = "CMake Select
 vim.keymap.set("n", "gD", function()
   vim.lsp.buf.declaration()
 end, {
-  desc="LSP declaration",
+  desc = "LSP declaration",
 })
 
 vim.keymap.set("n", "gd", function()
   vim.lsp.buf.definition()
 end, {
-  desc="LSP definition",
+  desc = "LSP definition",
 })
 
 vim.keymap.set("n", "K", function()
   vim.lsp.buf.hover()
 end, {
-  desc="LSP hover",
+  desc = "LSP hover",
 })
 
 vim.keymap.set("n", "gi", function()
   vim.lsp.buf.implementation()
 end, {
-  desc="LSP implementation",
+  desc = "LSP implementation",
 })
 
 vim.keymap.set("n", "<leader>ls", function()
