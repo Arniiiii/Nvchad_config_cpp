@@ -14,6 +14,7 @@ M.treesitter = {
     "markdown",
     "markdown_inline",
     "yaml",
+    "python",
   },
   indent = {
     enable = true,
@@ -43,10 +44,11 @@ M.mason = {
     -- cmake stuff
     "cmakelint",
     "cmakelang",
-    "cmake-language-server",
+    "neocmakelsp",
 
     -- python stuff
-    "python-lsp-server",
+    -- "python-lsp-server",
+    "pyright",
     "yapf",
 
     -- yaml stuff
