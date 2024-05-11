@@ -38,7 +38,7 @@ In general, it's great to use.
     - [x] CMake debugger in neovim !!! CMake Generate (`<leader>G`), toggle a breakpoint (`<leader>b`), press Continue(`<F5>`), it works! Prerequisite: cmake is 3.27+ and is compiled with dap feature. (for gentoo users `flaggie dev-build/cmake +dap`).
         - [x] build folder is taken from cmake plugin
             - [x] (Resolved) is taken at the initialization of neovim. Changed build dir? Right now only restart neovim.
-        - [ ] it doesn't take `generate_options` from `:CMakeSettings`.
+        - [x] ([Resolved](https://github.com/Civitasv/cmake-tools.nvim/issues/203)) it doesn't take `generate_options` from `:CMakeSettings`.
     - [x] c++/c/rust debugger : press CMake debug (`<leader>cd`), enjoy
         - [x] codelldb by default is taken from meson. So, generally, no manual typing pathes
         - [ ] how to go through asm instructions? seems that codelldb doesn't support it, or my experimental mapping doesn't work.

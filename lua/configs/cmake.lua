@@ -9,6 +9,7 @@ require("cmake-tools").setup {
     "-DCMAKE_TOOLCHAIN_FILE=~/apps/vcpkg/scripts/buildsystems/vcpkg.cmake",
     "-DCPM_SOURCE_CACHE=~/.cache/cpm/",
     "-DCMAKE_BUILD_TYPE=Debug",
+    "-DCMAKE_CXX_FLAGS='-pipe -march=native'",
   }, -- this will be passed when invoke `CMakeGenerate`
   cmake_build_options = { "--parallel 24", "--verbose" }, -- this will be passed when invoke `CMakeBuild`
   -- support macro expansion:
@@ -144,8 +145,7 @@ dap.adapters.cmake = function(callback, config)
         "--debugger",
         "--debugger-pipe=${pipe}",
         tostring(cmake_tools.get_build_directory()),
-        "--log-level DEBUG",
-        "-DFETCHCONTENT_QUIET=OFF",
+        table.concat(cmake_tools.get_generate_options(),' ')
       },
     },
   }
