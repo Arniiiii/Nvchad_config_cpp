@@ -1,4 +1,4 @@
-	# Nvchad config C++
+# Nvchad config C++
 
 ## What is it?
 It's my config for NvChad with orientation to C++ and python.
