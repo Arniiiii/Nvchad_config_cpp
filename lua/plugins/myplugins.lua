@@ -149,6 +149,12 @@ local plugins = {
     lazy = false,
   },
 
+  {
+    "rcarriga/nvim-notify",
+    config = function ()
+      require "configs.nvim-notify"
+    end
+  },
 
 
   -- To make a plugin not be loaded

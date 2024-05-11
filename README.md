@@ -60,7 +60,8 @@ In general, it's great to use.
     - [x] check next stuff to specify what model to use, if it's self-deployed: [here](https://github.com/olimorris/codecompanion.nvim/pull/45#issuecomment-2054028057)
     - [ ] still no shortcuts. `:CodeCompanion` will give you options to use.
 - [ ] Find out if there's a way to turn on less plugin not lazily. Investigation
-    - [ ] `ft` for some plugins works, for some not, idk why
+    - [ ] `ft` for some plugins works, for some not, idk why0
+- [x] Added [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify). Good looking plugin.
 - [x] Find a plugin for cool command palette
     - [ ] [hachy/cmdpalette.nvim](https://github.com/hachy/cmdpalette.nvim) doesn't support ranges and feels not so good  
     - [x] [gelguy/wilder.nvim](https://github.com/gelguy/wilder.nvim) seems to be a little bit unmaintained  ([my pain at installing it](https://github.com/gelguy/wilder.nvim/issues/196)). UPD: it's still is too buggy, and most important: it's slow. It's using python behind in sync way and on my pc it feels so badly sometimes... Maybe this plugin should be rewritten to lua or C/C++/Rust/Go/whatever_language ?
