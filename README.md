@@ -40,6 +40,7 @@ In general, it's great to use.
     - [ ] gitsigns related
 - [x] tmux navigator. Added keybindings for it. Ctrl+hjkl for navigating + tmux integration!!!
 - [x] added CodeCompanion plugin. Do you have ollama installed? Do you have a self-deployed AI ? This plugin is for you
+    - [x] check next stuff to specify what model to use, if it's self-deployed: [here](https://github.com/olimorris/codecompanion.nvim/pull/45#issuecomment-2054028057)
     - [ ] still no shortcuts. `:CodeCompanion` will give you options to use.
 - [ ] Find out if there's a way to turn on less plugin not lazily. Investigation
 - [x] Find a plugin for cool command palette
