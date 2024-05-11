@@ -41,8 +41,8 @@ In general, it's great to use.
         - [ ] it doesn't take `generate_options` from `:CMakeSettings`.
     - [x] c++/c/rust debugger : press CMake debug (`<leader>cd`), enjoy
         - [x] codelldb by default is taken from meson. So, generally, no manual typing pathes
-        - [ ] how to go through asm instructions?
-        - [ ] how to place breakpoint at main, if executable is compiled with `-g0` ?
+        - [ ] how to go through asm instructions? seems that codelldb doesn't support it, or my experimental mapping doesn't work.
+        - [ ] how to place breakpoint at main, if executable is compiled with `-g0` ? In raw gdb or lldb it's possible.
     - [x] nvim-dapui is connected
         - [x] added bindings for opening(`<leader>do`) and closing (`<leader>dc`) nvim-dapui .
     - [ ] nvim-dap-ui and cmake-tools are added at startup, not lazy.
