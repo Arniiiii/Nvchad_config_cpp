@@ -151,11 +151,28 @@ local plugins = {
 
   {
     "rcarriga/nvim-notify",
-    config = function ()
+    config = function()
       require "configs.nvim-notify"
-    end
+    end,
   },
 
+  -- add this to your lua/plugins.lua, lua/plugins/init.lua,  or the file you keep your other plugins:
+  {
+    "numToStr/Comment.nvim",
+    opts = {
+      -- add any options here
+    },
+    config = function ()
+      require "configs.commentnvim"
+    end,
+    lazy = false,
+  },
+
+  -- { lua - utils.nvim },
+  -- { nvim - nio },
+  -- { nui.nvim },
+  -- { plenary.nvim },
+  -- { pathlib.nvim },
 
   -- To make a plugin not be loaded
   -- {
