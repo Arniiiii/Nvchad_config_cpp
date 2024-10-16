@@ -1,12 +1,30 @@
-require("codecompanion").setup({
+require("codecompanion").setup {
   adapters = {
-    ollama = require("codecompanion.adapters").use("ollama"),
-    chat = require("codecompanion.adapters").use("ollama"),
-    inline = require("codecompanion.adapters").use("ollama"),
+    anthropic = function()
+      return require("codecompanion.adapters").extend("anthropic", {
+        env = {
+          api_key = "",
+        },
+      })
+    end,
   },
-  strategies = {
-    chat = "ollama",
-    inline = "ollama",
+  chat = {
+    adapter = "anthropic",
   },
-  log_level = "DEBUG"
-})
+  inline = {
+    adapter = "anthropic",
+  },
+  agent = {
+    adapter = "anthropic",
+  },
+  -- adapters = {
+  --   ollama = require("codecompanion.adapters").extend("ollama"),
+  --   chat = require("codecompanion.adapters").extend("ollama"),
+  --   inline = require("codecompanion.adapters").extend("ollama"),
+  -- },
+  -- strategies = {
+  --   chat = "ollama",
+  --   inline = "ollama",
+  -- },
+  log_level = "DEBUG",
+}
