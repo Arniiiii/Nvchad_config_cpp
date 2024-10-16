@@ -136,8 +136,10 @@ local plugins = {
   {
     "olimorris/codecompanion.nvim",
     dependencies = {
-      "nvim-treesitter/nvim-treesitter",
       "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "hrsh7th/nvim-cmp", -- Optional: For activating slash commands and variables in the chat buffer
+      "nvim-telescope/telescope.nvim", -- Optional: For working with files with slash commands
       {
         "stevearc/dressing.nvim", -- Optional: Improves the default Neovim UI
         opts = {},
@@ -147,6 +149,7 @@ local plugins = {
       require "configs.codecompanion"
     end,
     lazy = false,
+    -- keys = { "<leader>a", "<C-a>", "ga" },
   },
 
   {
@@ -162,10 +165,18 @@ local plugins = {
     opts = {
       -- add any options here
     },
-    config = function ()
+    config = function()
       require "configs.commentnvim"
     end,
     lazy = false,
+  },
+
+  {
+    "L3MON4D3/LuaSnip",
+    -- follow latest release.
+    version = "v2.3", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+    -- install jsregexp (optional!).
+    build = "make install_jsregexp",
   },
 
   -- { lua - utils.nvim },

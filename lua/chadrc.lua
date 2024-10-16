@@ -6,7 +6,7 @@ local highlights = require "highlights"
 
 M.ui = {
   theme = "chadracula-evondev",
-  theme_toggle = { "chadracula-evondev", "chadracula-evondev" },
+  theme_toggle = { "chadracula-evondev", "material-lighter" },
   transparency = true,
   hl_override = highlights.override,
   hl_add = highlights.add,
