@@ -72,4 +72,5 @@ In general, it's great to use.
 - [ ] Find a good alternative to `:s`. 
 - [ ] Allow more diversity of folder structures for include-guard plugin. Now only works if there's `src` in a path to a file. 
     - [ ] Rewrite plugin to lua and use neovim's API?
+    - [x] Actually there's a snippet `#guard`.
 
