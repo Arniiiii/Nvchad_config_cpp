@@ -1,30 +1,34 @@
 require("codecompanion").setup {
   adapters = {
-    anthropic = function()
-      return require("codecompanion.adapters").extend("anthropic", {
-        env = {
-          api_key = "",
+    dolphin_mistral = function()
+      return require("codecompanion.adapters").extend("ollama", {
+        name = "dolphin-mistral:latest", -- Give this adapter a different name to differentiate it from the default ollama adapter
+        schema = {
+          model = {
+            default = "dolphin-mistral:latest",
+          },
+          num_ctx = {
+            default = 32768,
+          },
+          num_predict = {
+            default = -1,
+          },
         },
       })
     end,
   },
-  chat = {
-    adapter = "anthropic",
+  strategies = {
+    chat = {
+      adapter = "dolphin_mistral",
+    },
+    inline = {
+      adapter = "dolphin_mistral",
+    },
+    agent = {
+      adapter = "dolphin_mistral"
+    }
   },
-  inline = {
-    adapter = "anthropic",
-  },
-  agent = {
-    adapter = "anthropic",
-  },
-  -- adapters = {
-  --   ollama = require("codecompanion.adapters").extend("ollama"),
-  --   chat = require("codecompanion.adapters").extend("ollama"),
-  --   inline = require("codecompanion.adapters").extend("ollama"),
-  -- },
-  -- strategies = {
-  --   chat = "ollama",
-  --   inline = "ollama",
-  -- },
-  log_level = "DEBUG",
+  opts = {
+    send_code = true,
+  }
 }

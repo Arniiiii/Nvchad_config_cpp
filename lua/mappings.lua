@@ -201,11 +201,21 @@ vim.keymap.set("n", "<leader>ls", ":LspStart <CR>", { desc = "LSP start LSP" })
 vim.keymap.set("n", "<leader>lS", ":LspStop <CR>", { desc = "LSP stop LSP" })
 -- more keybinds!
 
-vim.api.nvim_set_keymap("n", "<C-g>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "<C-g>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>a", "<cmd>CodeCompanionToggle<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "<leader>a", "<cmd>CodeCompanionToggle<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "ga", "<cmd>CodeCompanionAdd<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+  "n",
+  "<C-g>",
+  "<cmd>CodeCompanionActions<cr>",
+  { desc = "CodeCompanion Open an LLM involvement menu", noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+  "v",
+  "<C-g>",
+  "<cmd>CodeCompanionActions<cr>",
+  { desc = "CodeCompanion Open an LLM involvement menu", noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap("n", "<leader>a", "<cmd>CodeCompanionToggle<cr>", { desc = "CodeCompanion Open a LLM buffer" , noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<leader>a", "<cmd>CodeCompanionToggle<cr>", { desc = "CodeCompanion Open a LLM buffer", noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "ga", "<cmd>CodeCompanionAdd<cr>", { desc = "CodeCompanion maybe save a chat with a LLM",noremap = true, silent = true })
 
 -- Expand 'cc' into 'CodeCompanion' in the command line
 vim.cmd [[cab cc CodeCompanion]]
