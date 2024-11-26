@@ -63,6 +63,10 @@ M.mason = {
     -- debugging
     "codelldb", -- c/c++/rust
     "debugpy",  -- python
+
+    -- java
+    "jdtls",
+    "java-debug-adapter",
   },
 }
 
