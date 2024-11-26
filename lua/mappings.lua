@@ -136,7 +136,7 @@ end, {
   desc = "LSP implementation",
 })
 
-vim.keymap.set("n", "<leader>ls", function()
+vim.keymap.set("n", "<leader>lh", function()
   vim.lsp.buf.signature_help()
 end, { desc = "LSP signature help" })
 
@@ -196,6 +196,9 @@ vim.keymap.set("n", "<leader>nf", function()
   require("neogen").generate()
 end, { desc = "Neogen generate smth" })
 
+vim.keymap.set("n", "<leader>lr", ":LspRestart <CR>", { desc = "LSP restart LSP" })
+vim.keymap.set("n", "<leader>ls", ":LspStart <CR>", { desc = "LSP start LSP" })
+vim.keymap.set("n", "<leader>lS", ":LspStop <CR>", { desc = "LSP stop LSP" })
 -- more keybinds!
 
 vim.api.nvim_set_keymap("n", "<C-g>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
