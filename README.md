@@ -21,6 +21,8 @@ To get some plugins working, which are written in some other languages than lua 
 - `:UpdateRemotePlugins`
 - restart neovim
 
+Try use `<leader>ch` aka `Space Bar + c + h` to get an awesome cheatsheet.
+
 ## Is it good?
 It's have clangd through Mason, cmake plugin, cmake debugger, c++ debugger, python debugger, some keybindings. 
 In general, it's great to use.
