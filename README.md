@@ -26,10 +26,16 @@ It's have clangd through Mason, cmake plugin, cmake debugger, c++ debugger, pyth
 In general, it's great to use.
 
 ## TODO
+- [ ] Figure out a way of using Large language model.
+    - [x] Setupped [olimorris/codecompanion.nvim](https://github.com/olimorris/codecompanion.nvim) for `ollama` with dolphin-mistral:latest
+        - [x] chat
+        - [x] inline-prompts
+        - [ ] autocomplete?
 - [ ] Find a good solution for .ipynb files.
     - [ ] [goerz/jupytext.vim](https://github.com/goerz/jupytext.vim) only editing, not executing. Though, amazing, needs jupytext installed
     - [ ] [dccsillag/magma-nvim](https//github.com/dccsillag/magma-nvim) seems to be about executing `*.py` scripts using jupyter. Not about executing ipynb.
     - [ ] [luk400/vim-jukit](https://github.com/luk400/vim-jukit) investigation...
+    - [ ] no solution because of images?
 - [x] migrate to nvchad v2.5
     - [x] apply migrate.sh 
     - [x] transform mappings syntax to vim mappings
