@@ -10,7 +10,7 @@ require("cmake-tools").setup {
     "-DCPM_SOURCE_CACHE=~/.cache/cpm/",
     "-DCMAKE_BUILD_TYPE=Debug",
     "-DCMAKE_GENERATOR='Ninja'",
-    "-DCMAKE_CXX_FLAGS='-pipe -march=native -ggdb3 -flto=auto -fdiagnostics-color=always -fdiagnostics-color'",
+    "-DCMAKE_CXX_FLAGS='-Wnrvo -Wpessimizing-move -pipe -march=native -ggdb3 -flto=auto -fdiagnostics-color=always -fdiagnostics-color'",
     "-DCMAKE_EXE_LINKER_FLAGS='-fuse-ld=mold -flto=auto'",
   }, -- this will be passed when invoke `CMakeGenerate`
   cmake_build_options = { "--parallel 24", "--verbose" }, -- this will be passed when invoke `CMakeBuild`

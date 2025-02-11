@@ -58,21 +58,6 @@ local plugins = {
     lazy = false,
   },
   {
-    "Freed-Wu/portage-language-server",
-    lazy = false,
-    config = function()
-      vim.api.nvim_create_autocmd({ "BufEnter" }, {
-        pattern = { "*.ebuild", "*.eclass", "make.conf", "color.map" },
-        callback = function()
-          vim.lsp.start {
-            name = "portage",
-            cmd = { "portage-language-server" },
-          }
-        end,
-      })
-    end,
-  },
-  {
     "drmikehenry/vim-headerguard",
     lazy = false,
     config = function()
