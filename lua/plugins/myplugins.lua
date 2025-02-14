@@ -66,29 +66,6 @@ local plugins = {
     lazy = false,
   },
   {
-    "gelguy/wilder.nvim",
-    dependencies = {
-      { "Gerodote/fzy-lua-native_updated_gitignore_repaired_makefile", build = "make", lazy = false },
-      {
-        "nixprime/cpsm",
-        dependencies = { "ctrlpvim/ctrlp.vim", lazy = false },
-        lazy = false,
-        build = "bash ./install.sh",
-      },
-    },
-    config = function()
-      require "configs.wilder"
-    end,
-    keys = { "/", "?", ":" },
-    build = function()
-      vim.cmd [[
-        let &rtp=&rtp
-      ]]
-      vim.api.nvim_command "runtime! plugin/rplugin.vim"
-      vim.api.nvim_command ":UpdateRemotePlugins"
-    end,
-  },
-  {
     "mfussenegger/nvim-dap",
     config = function()
       require "configs.nvim-dap"
@@ -110,7 +87,16 @@ local plugins = {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
-
+  {
+    "hrsh7th/nvim-cmp",
+    dependencies = { "saadparwaiz1/cmp_luasnip" },
+    config = require("configs.cmp"),
+    lazy = false,
+  },
+  { "hrsh7th/cmp-buffer", lazy = false },
+  { "hrsh7th/cmp-path", lazy = false },
+  { "hrsh7th/cmp-cmdline", lazy = false },
+  { "hrsh7th/cmp-nvim-lua", lazy = false },
   {
     "olimorris/codecompanion.nvim",
     dependencies = {

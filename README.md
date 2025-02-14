@@ -71,8 +71,9 @@ In general, it's great to use.
     - [ ] `ft` for some plugins works, for some not, idk why0
 - [x] Added [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify). Good looking plugin.
 - [x] Find a plugin for cool command palette
+    - [x] cmp works just fine
     - [ ] [hachy/cmdpalette.nvim](https://github.com/hachy/cmdpalette.nvim) doesn't support ranges and feels not so good  
-    - [x] [gelguy/wilder.nvim](https://github.com/gelguy/wilder.nvim) seems to be a little bit unmaintained  ([my pain at installing it](https://github.com/gelguy/wilder.nvim/issues/196)). UPD: it's still is too buggy, and most important: it's slow. It's using python behind in sync way and on my pc it feels so badly sometimes... Maybe this plugin should be rewritten to lua or C/C++/Rust/Go/whatever_language ?
+    - [ ] (previously used in the config, replaced by cmp.) [gelguy/wilder.nvim](https://github.com/gelguy/wilder.nvim) seems to be a little bit unmaintained  ([my pain at installing it](https://github.com/gelguy/wilder.nvim/issues/196)). UPD: it's still is too buggy, and most important: it's slow. It's using python behind in sync way and on my pc it feels so badly sometimes... Maybe this plugin should be rewritten to lua or C/C++/Rust/Go/whatever_language ?
         - [ ] has some problems with config portability?
     - [ ] [VonHeikemen/fine-cmdline.nvim](https://github.com/VonHeikemen/fine-cmdline.nvim) doesn't support ranges
     - [ ] [mrjones2014/legendary.nvim](https://github.com/mrjones2014/legendary.nvim) seems to *not* have ability to somehow get commands from everywhere like `:Telescope commands` , though looks cool. Doesn't support ranges. 
