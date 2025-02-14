@@ -4,10 +4,10 @@ local M = {}
 -- Path to overriding theme and highlights files
 local highlights = require "highlights"
 
-M.ui = {
-  theme = "chadracula-evondev",
-  theme_toggle = { "chadracula-evondev", "material-lighter" },
-  transparency = true,
+M.base46 = {
+  theme = "decay",
+  theme_toggle = { "decay", "flexoki-light" },
+  -- transparency = true,
   hl_override = highlights.override,
   hl_add = highlights.add,
 }

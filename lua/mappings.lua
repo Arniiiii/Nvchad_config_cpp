@@ -219,3 +219,7 @@ vim.api.nvim_set_keymap("v", "ga", "<cmd>CodeCompanionAdd<cr>", { desc = "CodeCo
 
 -- Expand 'cc' into 'CodeCompanion' in the command line
 vim.cmd [[cab cc CodeCompanion]]
+
+
+vim.keymap.set("n", "<leader>tt",function() require("base46").toggle_theme() end, { desc = "Base46 Toggle theme" , noremap = true, silent = true })
+vim.keymap.set("n", "<leader>tT",function() require("base46").toggle_transparency() end, { desc = "Base46 Toggle transparency" , noremap = true, silent = true })
