@@ -58,13 +58,6 @@ local plugins = {
     lazy = false,
   },
   {
-    "drmikehenry/vim-headerguard",
-    lazy = false,
-    config = function()
-      require "configs.vim-headerguard"
-    end,
-  },
-  {
     "danymat/neogen",
     dependencies = "nvim-treesitter/nvim-treesitter",
     config = function()
