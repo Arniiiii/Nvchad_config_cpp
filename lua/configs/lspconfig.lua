@@ -7,7 +7,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
-local servers = { "html", "cssls", "ts_ls", "pyright", "neocmake", "jdtls" }
+local servers = { "html", "cssls", "ts_ls", "pyright", "neocmake", "jdtls", "rust_analyzer" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {

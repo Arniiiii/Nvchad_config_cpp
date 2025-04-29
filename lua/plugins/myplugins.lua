@@ -93,19 +93,19 @@ local plugins = {
     config = require("configs.cmp"),
     lazy = false,
   },
-  { "hrsh7th/cmp-buffer", lazy = false },
-  { "hrsh7th/cmp-path", lazy = false },
-  { "hrsh7th/cmp-cmdline", lazy = false },
+  { "hrsh7th/cmp-buffer",   lazy = false },
+  { "hrsh7th/cmp-path",     lazy = false },
+  { "hrsh7th/cmp-cmdline",  lazy = false },
   { "hrsh7th/cmp-nvim-lua", lazy = false },
   {
     "olimorris/codecompanion.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
-      "hrsh7th/nvim-cmp", -- Optional: For activating slash commands and variables in the chat buffer
+      "hrsh7th/nvim-cmp",              -- Optional: For activating slash commands and variables in the chat buffer
       "nvim-telescope/telescope.nvim", -- Optional: For working with files with slash commands
       {
-        "stevearc/dressing.nvim", -- Optional: Improves the default Neovim UI
+        "stevearc/dressing.nvim",      -- Optional: Improves the default Neovim UI
         opts = {},
       },
     },
@@ -142,7 +142,32 @@ local plugins = {
     -- install jsregexp (optional!).
     build = "make install_jsregexp",
   },
-
+  {
+    "nwiizo/cargo.nvim",
+    build = "cargo build --release",
+    config = function()
+      require("cargo").setup({
+        float_window = true,
+        window_width = 0.8,
+        window_height = 0.8,
+        border = "rounded",
+        auto_close = true,
+        close_timeout = 5000,
+      })
+    end,
+    ft = { "rust" },
+    cmd = {
+      "CargoBench",
+      "CargoBuild",
+      "CargoClean",
+      "CargoDoc",
+      "CargoNew",
+      "CargoRun",
+      "CargoTest",
+      "CargoUpdate"
+    },
+    -- lazy = false,
+  },
   -- { lua - utils.nvim },
   -- { nvim - nio },
   -- { nui.nvim },
